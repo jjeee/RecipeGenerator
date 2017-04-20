@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <Button
+            android:id="@+id/btn_dairy_Milk"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Milk" />
+
+        <Button
+            android:id="@+id/btn_dairy_HeavyCream"
+            android:layout_column="3"
+            android:layout_row="1"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Heavy Cream" />
+
+        <Button
+            android:id="@+id/btn_dairy_Butter"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Butter" />
+
+        <Button
+            android:id="@+id/btn_dairy_SourCream"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Sour Cream" />
+
+        <Button
+            android:id="@+id/btn_dairy_Cheddar"
+            android:layout_column="3"
+            android:layout_row="2"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Cheddar" />
+
+        <Button
+            android:id="@+id/btn_dairy_CreamCheese"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Cream Chese" />
+
+        <Button
+            android:id="@+id/btn_dairy_Yogurt"
+            android:layout_column="2"
+            android:layout_row="3"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Yogurt" />
+
+        <Button
+            android:id="@+id/btn_dairy_Cream"
+            android:layout_column="3"
+            android:layout_row="3"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Cream" />
+
+        <Button
+            android:id="@+id/btn_dairy_Egg"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Egg" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@id/btn_all_back"
+            android:text="@string/all_back"
+            android:layout_marginEnd="55dp"
+            style="@style/nav_button" />
+
+        <Button
+            android:id="@id/btn_all_clear"
+            android:text="@string/all_clear"
+            android:layout_marginStart="55dp"
+            style="@style/nav_button" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <Button
+            android:id="@+id/btn_meat_GrndBeef"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Ground Beef" />
+
+        <Button
+            android:id="@+id/btn_meat_Porkchop"
+            android:layout_column="3"
+            android:layout_row="1"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Pork chop" />
+
+        <Button
+            android:id="@+id/btn_meat_Lamb"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Lamb" />
+
+        <Button
+            android:id="@+id/btn_meat_Turkey"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Turkey" />
+
+        <Button
+            android:id="@+id/btn_meat_beefSteak"
+            android:layout_column="3"
+            android:layout_row="2"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Beef steak" />
+
+        <Button
+            android:id="@+id/btn_meat_Sausage"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Sausage" />
+
+        <Button
+            android:id="@+id/btn_meat_Bacon"
+            android:layout_column="2"
+            android:layout_row="3"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Bacon" />
+
+        <Button
+            android:id="@+id/btn_meat_Veal"
+            android:layout_column="3"
+            android:layout_row="3"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Veal" />
+
+        <Button
+            android:layout_column="2"
+            android:layout_row="1"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Chicken Breast"
+            android:id="@+id/btn_meat_ChickenBreast"
+            android:elevation="0dp" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@id/tv_ingredients_title"
+        android:text="@string/ingredients_title"
+        style="@style/title_textview" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@id/btn_all_back"
+            android:text="@string/all_back"
+            android:layout_marginEnd="55dp"
+            style="@style/nav_button" />
+
+        <Button
+            android:id="@id/btn_all_clear"
+            android:text="@string/all_clear"
+            android:layout_marginStart="55dp"
+            style="@style/nav_button" />
+
+    </LinearLayout>
+
+</LinearLayout>

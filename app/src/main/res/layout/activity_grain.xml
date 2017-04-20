@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <Button
+            android:id="@+id/btn_grain_Flour"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Flour" />
+
+        <Button
+            android:id="@+id/btn_grain_Rice"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Rice" />
+
+        <Button
+            android:id="@+id/btn_grain_CornTortilla"
+            android:layout_column="3"
+            android:layout_row="1"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Corn Tortilla" />
+
+        <Button
+            android:id="@+id/btn_grain_Bread"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Bread" />
+
+        <Button
+            android:id="@+id/btn_grain_Pasta"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="PAsta" />
+
+        <Button
+            android:id="@+id/btn_grain_Semolina"
+            android:layout_column="3"
+            android:layout_row="2"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Semolina" />
+
+        <Button
+            android:id="@+id/btn_grain_Cereal"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Cereal" />
+
+        <Button
+            android:id="@+id/btn_grain_Bagel"
+            android:layout_column="2"
+            android:layout_row="3"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Bagel" />
+
+        <Button
+            android:id="@+id/btn_grain_Pita"
+            android:layout_column="3"
+            android:layout_row="3"
+            android:background="@color/pastelRed"
+            style="@style/grid_button"
+            android:text="Pita" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@id/btn_all_back"
+            android:text="@string/all_back"
+            android:layout_marginEnd="55dp"
+            style="@style/nav_button" />
+
+        <Button
+            android:id="@id/btn_all_clear"
+            android:text="@string/all_clear"
+            android:layout_marginStart="55dp"
+            style="@style/nav_button" />
+
+    </LinearLayout>
+</LinearLayout>
