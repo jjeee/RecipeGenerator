@@ -29,7 +29,7 @@ public class test extends AppCompatActivity{
         String[] matchList=match.split("\t");
 
         BackgroundWorker backgroundWorker=new BackgroundWorker(this);
-        String type="register";
+        String type="con";
 
         if (matchList.length==1)
             name=matchList[0];
