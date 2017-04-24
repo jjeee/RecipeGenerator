@@ -29,8 +29,8 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
     @Override
     protected String doInBackground(String... params) {
         String type = params[0];
-        String register_url = "http://76.98.61.23/con.php";
-        if(type.equals("con")){
+        String register_url = "http://76.98.61.24/testing.php";
+        if(type.equals("testing")){
             try {
                 String count = params[1];
                 String surname = params[2];
