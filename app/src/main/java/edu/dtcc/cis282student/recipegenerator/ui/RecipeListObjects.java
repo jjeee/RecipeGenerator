@@ -3,7 +3,7 @@ package edu.dtcc.cis282student.recipegenerator.ui;
 import java.util.ArrayList;
 
 public class RecipeListObjects {
-    static ArrayList<Recipe> recipes=new ArrayList<>();
+    public ArrayList<Recipe> recipes=new ArrayList<>();
 
     public RecipeListObjects(){
         recipes.add(new Recipe("Chili"));
@@ -56,7 +56,7 @@ public class RecipeListObjects {
         recipes.get(4).addIngredient("1/2","teaspoon","black pepper");
     }
 
-    static String compareList(String[] ingredientList){
+    public String compareList(String[] ingredientList){
         String recipeString="";
         int count;
 
@@ -77,7 +77,7 @@ public class RecipeListObjects {
 }
 
 class Recipe{
-    static ArrayList<Ingredient> ingredients =new ArrayList<>();
+    ArrayList<Ingredient> ingredients =new ArrayList<>();
     String recipeName="";
 
 
@@ -85,7 +85,7 @@ class Recipe{
         this.recipeName=recipeName;
     }
 
-    static public void addIngredient(String measure,String unit,String name){
+    public void addIngredient(String measure,String unit,String name){
         ingredients.add(new Ingredient(measure,unit,name));
     }
 

@@ -134,6 +134,8 @@ public class CategoryListActivity extends AppCompatActivity implements View.OnCl
                 break;
 
             case R.id.btn_all_find:
+                Intent findIntent = new Intent(this, test.class);
+                startActivity(findIntent);
                 break;
 
             case R.id.btn_all_clear:

@@ -26,6 +26,12 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         // Button listeners
         btnFind.setOnClickListener(this);
         btnSaved.setOnClickListener(this);
+
+        String type= "login";
+        String username="";
+        String password="";
+        BackgroundWorker backgroundWorker = new BackgroundWorker(this);
+        backgroundWorker.execute(type,username,password);
     }
 
     @Override

@@ -27,6 +27,7 @@
         <activity android:name=".ui.SeaList" />
         <activity android:name=".ui.SpiceList" />
         <activity android:name=".ui.VegetableList" />
+        <activity android:name=".ui.test"/>
     </application>
 
 </manifest>

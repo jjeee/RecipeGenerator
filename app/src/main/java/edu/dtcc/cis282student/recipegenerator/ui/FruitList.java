@@ -1,5 +1,7 @@
 package edu.dtcc.cis282student.recipegenerator.ui;
 
+import android.app.AlertDialog;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -9,6 +11,7 @@ import edu.dtcc.cis282student.recipegenerator.R;
 
 public class FruitList extends AppCompatActivity implements View.OnClickListener {
     CategoryListActivity categoryListActivity=new CategoryListActivity();
+    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

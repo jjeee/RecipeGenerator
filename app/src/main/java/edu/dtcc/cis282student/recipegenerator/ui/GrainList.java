@@ -8,13 +8,14 @@ import android.widget.Button;
 import edu.dtcc.cis282student.recipegenerator.R;
 
 public class GrainList extends AppCompatActivity implements View.OnClickListener {
-    CategoryListActivity categoryListActivity=new CategoryListActivity();
+    public CategoryListActivity categoryListActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grain);
 
+        categoryListActivity=new CategoryListActivity();
         Button btnFlour=(Button) findViewById(R.id.btn_grain_Flour);
         Button btnRice=(Button) findViewById(R.id.btn_grain_Rice);
         Button btnCornTortilla=(Button) findViewById(R.id.btn_grain_CornTortilla);
