@@ -30,34 +30,21 @@ public class test extends AppCompatActivity{
         String match=recipeListObjects.compareList(categoryListActivity.ingredientsList);
         String[] matchList=match.split("\t");
 
+        for (int i=0;i<matchList.length;i++){
+            if (matchList[i]=="Chili")
+                count=matchList[i];
+            else if (matchList[i]=="Baked salmon")
+                surname=matchList[i];
+            else if (matchList[i]=="Spaghetti sauce with ground beef")
+                age=matchList[i];
+            else if (matchList[i]=="Lemon pepper chicken")
+                username=matchList[i];
+            else if (matchList[i]=="Kofta")
+                password=matchList[i];
+        }
+
         BackgroundWorker backgroundWorker=new BackgroundWorker(this);
         String type="testing";
-
-        if (matchList.length==1)
-            count=matchList[0];
-        else if (matchList.length==2){
-            count=matchList[0];
-            surname=matchList[1];
-        }
-        else if (matchList[2]!=null){
-            count=matchList[0];
-            surname=matchList[1];
-            age=matchList[2];
-        }
-        else if (matchList[3]!=null) {
-            count = matchList[0];
-            surname = matchList[1];
-            age = matchList[2];
-            username = matchList[3];
-        }
-        else if (matchList[4]!=null) {
-            count=matchList[0];
-            surname=matchList[1];
-            age=matchList[2];
-            username = matchList[3];
-            password=matchList[4];
-        }
-
 
         backgroundWorker.execute(type,count,surname,age,username,password);
     }
