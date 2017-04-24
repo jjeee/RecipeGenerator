@@ -31,15 +31,15 @@ public class test extends AppCompatActivity{
         String[] matchList=match.split("\t");
 
         for (int i=0;i<matchList.length;i++){
-            if (matchList[i]=="Chili")
+            if (matchList[i].equals("Chili"))
                 count=matchList[i];
-            else if (matchList[i]=="Baked salmon")
+            else if (matchList[i].equals("Baked salmon"))
                 surname=matchList[i];
-            else if (matchList[i]=="Spaghetti sauce with ground beef")
+            else if (matchList[i].equals("Spaghetti sauce with ground beef"))
                 age=matchList[i];
-            else if (matchList[i]=="Lemon pepper chicken")
+            else if (matchList[i].equals("Lemon pepper chicken"))
                 username=matchList[i];
-            else if (matchList[i]=="Kofta")
+            else if (matchList[i].equals("Kofta"))
                 password=matchList[i];
         }
 
@@ -47,5 +47,8 @@ public class test extends AppCompatActivity{
         String type="testing";
 
         backgroundWorker.execute(type,count,surname,age,username,password);
+        //TextView textbox=(TextView) findViewById(R.id.textView);
+        //textbox.setText(count+"\t"+surname+"\t"+age+"\t"+username+"\t"+password);
+
     }
 }
