@@ -2,6 +2,7 @@ package edu.dtcc.cis282student.recipegenerator.ui;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -12,7 +13,7 @@ import edu.dtcc.cis282student.recipegenerator.R;
  * Created by Big Osiris on 4/24/2017.
  */
 
-public class test extends AppCompatActivity{
+public class test extends AppCompatActivity implements View.OnClickListener{
     RecipeListObjects recipeListObjects=new RecipeListObjects();
     CategoryListActivity categoryListActivity=new CategoryListActivity();
     String count,surname,age,username,password;
@@ -21,12 +22,6 @@ public class test extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.test);
-    }
-
-    @Override
-    public void onStart(){
-        super.onStart();
-
         String match=recipeListObjects.compareList(categoryListActivity.ingredientsList);
         String[] matchList=match.split("\t");
 
@@ -41,14 +36,22 @@ public class test extends AppCompatActivity{
                 username=matchList[i];
             else if (matchList[i].equals("Kofta"))
                 password=matchList[i];
+            TextView textbox=(TextView) findViewById(R.id.textView);
+            textbox.setText(count+"\t"+surname+"\t"+age+"\t"+username+"\t"+password);
         }
+    }
 
-        BackgroundWorker backgroundWorker=new BackgroundWorker(this);
-        String type="testing";
-
-        backgroundWorker.execute(type,count,surname,age,username,password);
+    public void onStart(){
+        super.onStart();
         //TextView textbox=(TextView) findViewById(R.id.textView);
         //textbox.setText(count+"\t"+surname+"\t"+age+"\t"+username+"\t"+password);
 
+    }
+
+    @Override
+    public void onClick(View view) {
+        String type="testing";
+        BackgroundWorker backgroundWorker=new BackgroundWorker(this);
+        backgroundWorker.execute(type,count,surname,age,username,password);
     }
 }

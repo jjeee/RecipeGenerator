@@ -13,7 +13,7 @@ public class CategoryListActivity extends AppCompatActivity implements View.OnCl
 
     private static final String TAG = "CategoryListActivity";
     static String[] ingredientsList=new String[81];
-    static int count=0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
